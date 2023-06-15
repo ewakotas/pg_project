@@ -9,4 +9,19 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Start Screen");
+    }
 }
