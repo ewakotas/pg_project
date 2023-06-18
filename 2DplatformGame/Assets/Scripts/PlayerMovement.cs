@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState { idle, running, jumping, falling };
 
+    private float timePassed = 0f;
+    private float moveSpeedTemp = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        moveSpeedTemp = moveSpeed;
     }
 
     // Update is called once per frame
@@ -40,7 +44,17 @@ public class PlayerMovement : MonoBehaviour
             jumpSoundEffect.Play();
         }
 
-       UpdateAnimationState();
+        timePassed += Time.deltaTime;
+        if (timePassed < 5f)
+        {
+            moveSpeed = 0f;
+        }
+        else
+        {
+            moveSpeed = moveSpeedTemp;
+        }
+
+        UpdateAnimationState();
        
     }
 
