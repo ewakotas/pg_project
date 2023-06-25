@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - lives
   - heart
+  - spikeBall
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     private float timePassed = 0f;
     private float moveSpeedTemp = 0f;
 
+    public Transform shootingPoint;
+    public GameObject bullet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
     {
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2 (moveSpeed * dirX, rb.velocity.y);
+
+        if(Keyboard.current.shiftKey.wasPressedThisFrame)
+        {
+            Instantiate(bullet, shootingPoint.position, transform.rotation);
+        }
 
        if(Input.GetButtonDown("Jump") && IsGrounded())
         {
