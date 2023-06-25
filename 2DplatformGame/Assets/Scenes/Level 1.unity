@@ -129896,6 +129896,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -509709595, guid: 7942d5a16b7de174f9319c076dcd4b22, type: 3}
     - target: {fileID: 2436251149646450845, guid: 0d92564d04f041b4c89c07a57ba05e09, type: 3}
+      propertyPath: text1
+      value: You can pick cherris for whatever reason you want, buddy! Dont' know
+        why they are though.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436251149646450845, guid: 0d92564d04f041b4c89c07a57ba05e09, type: 3}
+      propertyPath: text2
+      value: Be carefull, buddy! You are walking on thin ice! Try picking hearts
+        to get another lives.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436251149646450845, guid: 0d92564d04f041b4c89c07a57ba05e09, type: 3}
+      propertyPath: text3
+      value: Buddy! Pull yourself together! Hearts or cherris won't save your skin
+        now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436251149646450845, guid: 0d92564d04f041b4c89c07a57ba05e09, type: 3}
       propertyPath: rockText
       value: 
       objectReference: {fileID: 676675047}

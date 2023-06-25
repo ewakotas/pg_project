@@ -12,6 +12,9 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private AudioSource deathSoundEffect;
     [SerializeField] private Text livesText;
     [SerializeField] private Text rockText;
+    [SerializeField] private string text1;
+    [SerializeField] private string text2;
+    [SerializeField] private string text3;
     private static int livesNumber = 3;
 
     void Start()
@@ -21,13 +24,13 @@ public class PlayerLife : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if(livesNumber >=3)
         {
-            rockText.text = "You can pick cherris for whatever reason you want, buddy! Dont' know why they are though.";
+            rockText.text = text1;
         } else if (livesNumber == 2)
         {
-            rockText.text = "Be carefull, buddy! You are walking on thin ice! Try picking hearts to get another lives.";
+            rockText.text = text2;
         } else if (livesNumber == 1)
         {
-            rockText.text = "Buddy! Pull yourself together! Hearts or cherris won't save your skin now!";
+            rockText.text = text3;
         }
     }
 
