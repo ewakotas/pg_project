@@ -5519,7 +5519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1345436357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6418,11 +6418,11 @@ GameObject:
   - component: {fileID: 1929558227}
   m_Layer: 0
   m_Name: Enemy (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1929558227
 Rigidbody2D:
   serializedVersion: 4
@@ -6475,7 +6475,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.24104233
+  m_Radius: 0.14
 --- !u!114 &1929558230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6512,8 +6512,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929558226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.233883, y: 2.29, z: 0.03995877}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 34.099, y: 2.29, z: 0.03995877}
+  m_LocalScale: {x: 4.9375, y: 5.125, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 486839887}
