@@ -25,6 +25,7 @@ public class go_to_next_scene : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                Debug.Log(SceneManager.GetActiveScene().buildIndex);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
